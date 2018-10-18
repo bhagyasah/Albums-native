@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View,Alert} from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -19,9 +19,11 @@ const instructions = Platform.select({
 type Props = {};
 export default class App extends Component<Props> {
   render() {
+    let name = "my name is bhagya"
     return (
       <View style={styles.container}>
         <Text>hello world test 4</Text>
+        {/* {Alert.alert(name.slice(0,2)+name.slice(8,18))} */}
       </View>
     );
   }
